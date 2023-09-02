@@ -3,37 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GABO</title>
-    <style>
-        main { background-color: rgb(55, 61, 61);}
-
-    </style>
-    <link rel="stylesheet" href="./css/Main.css">
+    <title>Gabo</title>
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-    body {
-        margin: 0;
-    }
+    <!-- CSS (Forma 1): style inline -->
     <header>
-        <div id="header" class="logo" style="background-color: lightgrey;">
-            <img id="logo" src="./imagenes/logo.png" alt="Logo Gabriel">
-        </div>
         <div class="menu-principal">
-            <a href="#"> Categorias</a>
+            <a href="#">Categorias</a>
             <a href="#">Biografia</a>
             <a href="#">Premios</a>
         </div>
-    </header class= header>
-    <main>
-        aqui va el contenido principal
-        <button onclick="saluda()"></button>
+        <div class="logo">
+            <img id="logo" src="./imagenes/logo.png" alt="Logo: Gabriel ">
+        </div>
+        
+    </header>
+    <main class="main">
+        <div class="banner">
+            <h1  class="banner-title">Gabriel Garcia Marquez</h1>
+        </div>
+        Aqui va el contenido principal
     </main>
-    <aside>
-        aqui van los Widgets de la pagina
-    </aside>
-    <footer>
-        aqui tambien pueden ir los Widgets
-        aqui va el pie de pagina 
+    <footer class="footer">
+        Aqui van los Widgets de la pagina
+        Aqui va el pie de pagina
     </footer>
 
     <script src="./js/main.js"></script>
