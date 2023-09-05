@@ -15,6 +15,13 @@ img#logo {
     padding: 0.5rem;
 }
 
+.menu-principal {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
 a {
     text-decoration: none;
     font-size: 1.2rem;
@@ -24,21 +31,50 @@ a {
     font-weight: 500;
 }
 
+.banner {
+    background-image: url("../imagenes/banner.jpg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 29vw;
+    width: 100%; 
+    display: flex;
+    justify-content: end;
+    align-items: center;
+ }
+
 .main {
     background-color: #b4c2dd;
     color: white;
 }
 
-.banner {
-   background-image: url("../imagenes/banner.jpg") ;
-   background-repeat: no-repeat;
-   background-size: cover;
-   height: 29vw;
-   width: 100%; 
-   display: flex;
-   justify-content: end;
-   align-items: center;
+.sections {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
 }
+.section-items {
+
+    border: 2px dotted yellow;
+    width: 5rem;
+    height: 5rem;
+    background: orange;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2.2rem 0
+}
+    padding: 2.2rem 0
+.text-anchor {
+        font-size: .55rem;
+        padding: 1.2rem 0.8rem;
+        margin: 0;
+        text-transform: uppercase;
+    }
+
 .banner-title
 {margin: 0;
     text-align: right;
