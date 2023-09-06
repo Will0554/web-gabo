@@ -1,86 +1,131 @@
-body{
+body {
     margin: 0;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
+
 header {
+    background-color: lightgray;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: row-reverse;
 }
+
 img#logo {
-    width: 7rem;
-    padding: .6rem;
+    width: 8rem;
+    padding: 0.5rem;
 }
-.menu-principal{
+
+.menu-principal {
     display: flex;
     list-style: none;
-    border: 1px;
     padding: 0;
     margin: 0;
 }
+
 a {
     text-decoration: none;
     font-size: 1.2rem;
-    margin: 0.5rem;
     padding: 0.5rem;
+    margin: 0.5rem;
     color: black;
     font-weight: 500;
 }
-.main
-    {
-    background-color: #b4c2dd    ;
+
+.main {
+    background-color: #b4c2dd;
+    color: white;
 }
-.banner
-    {
-    background-image: url('../imagenes/banner.jpg');
-    height: 29vw;
-    object-fit: cover;
-    width: 100%;
+
+.banner {
+    background-image: url( '../imagenes/banner.jpg' );
+    background-repeat: no-repeat;
     background-size: cover;
+    height: 29vw;
+    width: 100%;
     display: flex;
-    justify-content: right;
+    justify-content: flex-end;
     align-items: center;
 }
-.tituloBanner{
+
+.banner-title {
+    font-size: 2.6rem;
     margin: 0;
     text-align: right;
     text-transform: uppercase;
-    font-size: 2.9rem;
-    width: 20%;
-    margin-right: 2rem;
-    color: white;
-    }
-.sections   {
+    width: 25%;
+}
+
+.sections {
+    list-style: none;
+    padding: 0;
+    margin: 0;
     display: flex;
     justify-content: center;
-    list-style: none;
-    margin: 0%;
-    padding: 0;
     align-items: center;
-    gap: 5rem; 
+    gap: 4rem;
 }
-.obras{
-    padding: 2.2rem;
-}
-.section-item{
-    border: 2px;
+
+.section-item {
     width: 5rem;
     height: 5rem;
     background: orange;
     border-radius: 50%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 }
-.text-anchor{
-    font-size: 0.55rem;
-    display: block;
-    padding: .1rem 0.8rem 2rem 0.8rem;
+
+.obras {
+    padding: 2.2rem 0;
+}
+
+.text-anchor {
+    font-size: .55rem;
+    padding: 1.2rem 0.8rem;
     margin: 0;
     text-transform: uppercase;
 }
-footer
-    {
+
+.premios {
+    color: black;
+}
+
+table {
+    width: 50%;
+    margin: 0 auto;
+    padding: 0 0 2rem 0;
+}
+
+.premios-title {
+    text-align: center;
+    margin: 2rem 0 3rem 0;
+}
+
+.date {
+    border: 2px solid blue;
+    background: orange;
+    padding: 0.7rem 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+
+td {
+    padding-left: 2rem;
+    font-size: .9rem;
+}
+
+.primer-premio {
+    height: 6rem;
+}
+
+
+footer {
     background-color: pink;
-    }
+}
+
+.copyright {
+    margin: 0;
+    padding: 1rem;
+    text-align: center;
+}

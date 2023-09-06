@@ -4,84 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gabo</title>
-    <style>main {
-        /* 2. Estilos embebidos */
-        background-color: #d1cec7;
-        color: gray;
-    }
-    </style>
-    <!-- 3. estilo en un archivo externo -->
-    <link rel="stylesheet" href="./CSS/main.css">
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-    <header style="background-color: #d1cec7;">
+    <!-- CSS (Forma 1): style inline -->
+    <header>
         <nav class="nav-menu">
             <ul class="menu-principal">
-                <li></li> <a href="#">Categorias</a></li>
-                <li></li> <a href="#">Biografia</a></li>
-                <li></li> <a href="#">Premios</a></li>
+                <li class="menu-item"><a href="#">Categorias</a></li>
+                <li class="menu-item"><a href="#">Biografia</a></li>
+                <li class="menu-item"><a href="#">Premios</a></li>
             </ul>
-        </nav> 
+        </nav>
         <div class="logo">
-        <!-- 1. style inline -->
-            <img id="logo" src="./imagenes/logo.png" alt="Logo: Gabo">
+            <img id="logo" src="./imagenes/logo.png" alt="Logo: Gabriel ">
         </div>
-
+        
     </header>
     <main class="main">
-    <div class="banner">
-        <h1 class="tituloBanner">Gabriel García Marquez</h1>
-    </div>
+        <!-- <img src="./images/banner.jpg" alt=""> -->
+        <section class="banner">
+            <h1 class="banner-title">Gabriel Garcia Marquez</h1>
+        </section>
+
         <section class="obras">
             <ul class="sections">
                 <li class="section-item"><a href="#" class="text-anchor">Cuentos</a></li>
-                <li class="section-item"><a href="#" class="text-anchor">No Ficcion</a></li>
-                <li class="section-item "><a href="#" class="text-anchor">Novelas</a></li>
+                <li class="section-item"><a href="#" class="text-anchor">No ficcion</a></li>
+                <li class="section-item"><a href="#" class="text-anchor">Novelas</a></li>
             </ul>
-
         </section>
 
         <section class="premios">
-            <h2 class="premios-tittle">Premios de GABO</h2>
+            <h2 class="premios-title">Premios de GABO</h2>
 
-            <table border="1" cellspacing="1" cellpadding="1">
-                <thead>
-                    <th>Encabezados</th>
-                    <th>Encabezados</th>
-                    <th>Encabezados</th>
-                    <th>Encabezados</th>
-                    <th>Encabezados</th>
-                </thead>
+            <table class="table-premios">
                 <tbody>
-
+                    <tr class="primer-premio">
+                        <td><span class="date">1993</span></td>
+                        <td>Miembro honorario del Instituto Caro y Cuervo en Bogotá</td>
+                    </tr>
+                    <tr class="segundo-premio">
+                        <td><span class="date">1985</span></td>
+                        <td>Premio cuarenta años del Círculo de Periodistas de Bogotá</td>
+                    </tr>
+                    <tr class="primer-premio">
+                        <td><span class="date">1961</span></td>
+                        <td>Premio ESSO de Novela Colombiana por La mala hora</td>
+                    </tr>
+                    <tr class="segundo-premio">
+                        <td><span class="date">1955</span></td>
+                        <td>Primer Premio en el concurso de la Asociación de Escritores y Artistas, por su cuento <i>Un día después del sabado</i></td>
+                    </tr>
                 </tbody>
-                <tr>
-                    <td colspan="2"> Col1</td>
-                    
-                    <td rowspan="3"> Col3</td>
-                    <td> Col4</td>
-                    <td> Col5</td>
-                </tr>
-                <tr>
-                    <td> Col1</td>
-                    <td> Col2</td>
-                    
-                    <td> Col4</td>
-                    <td> Col5</td>
-                </tr>
-                <tr>
-                   <td> Col1</td>
-                   <td> Col2</td>
-                   
-                   <td> Col4</td>
-                   <td> Col5</td>
-                </tr>
             </table>
+
         </section>
-</main>
+
+    </main>
     <footer class="footer">
-        Pie de pagina
+        <p class="copyright">Gabo 2023 &copy;. Todos los derechos reservados.</p>
     </footer>
 
+    <script src="./js/main.js"></script>
 </body>
 </html>
